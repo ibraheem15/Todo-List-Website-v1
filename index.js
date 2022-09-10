@@ -73,7 +73,7 @@ app.get("/", function (req, res) {
       res.redirect("/");
     } else {
       res.render("lists", {
-        list_title: "Today",
+        list_title: getDay(),
         items: foundItems,
       });
     }
